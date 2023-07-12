@@ -23,6 +23,9 @@ In our main CSS file, we have predefined color variables to maintain consistency
 --red: #d00000;
 --warm-black: #282623;
 --off-white: #faf8f7;
+--images-color: #51d4ce;
+--gradient-first-color: #2faf7e;
+--gradient-second-color: #3fd0c9;
 ```
 
 Please use these variables when adding or modifying any styling in the CSS files, you can add or modify as necessary.
