@@ -1,0 +1,20 @@
+:root {
+  /* Colors */
+  --main-blue: #03353c;
+  --secondary-blue: #78cbab;
+  --just-white: #fff;
+  --grey: #bebebe;
+  --black: #201e1c;
+  --red: #d00000;
+  --warm-black: #282623;
+  --off-white: #faf8f7;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: '#', sans-serif;
+}
