@@ -16,16 +16,19 @@ In our main CSS file, we have predefined color variables to maintain consistency
 
 ```css
 --main-blue: #03353c;
---secondary-blue: #78cbab;
---just-white: #fff;
---grey: #bebebe;
---black: #201e1c;
---red: #d00000;
---warm-black: #282623;
---off-white: #faf8f7;
---images-color: #51d4ce;
---gradient-first-color: #2faf7e;
---gradient-second-color: #3fd0c9;
+  --secondary-blue: #78cbab;
+  --just-white: #fff;
+  --grey: #bebebe;
+  --black: #201e1c;
+  --red: #d00000;
+  --warm-black: #282623;
+  --off-white: #faf8f7;
+  --images-color: #51d4ce;
+  --gradient-first-color: #2faf7e;
+  --gradient-second-color: #3fd0c9;
+  --avoiding-card-background-color: #bebebe;
+  --compare-images-bg-color: #36bd9f;
+  --faq-active-color: #44b589;
 ```
 
 Please use these variables when adding or modifying any styling in the CSS files, you can add or modify as necessary.

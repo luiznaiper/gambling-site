@@ -11,6 +11,9 @@
   --images-color: #51d4ce;
   --gradient-first-color: #2faf7e;
   --gradient-second-color: #3fd0c9;
+  --avoiding-card-background-color: #bebebe;
+  --compare-images-bg-color: #36bd9f;
+  --faq-active-color: #44b589;
 }
 * {
   box-sizing: border-box;
@@ -24,6 +27,10 @@ html {
   /* font-family: 'Poppins' sans-serif; */
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 main {
   min-height: 100%;
   max-height: max-content;
@@ -32,6 +39,7 @@ main {
 /*Classes used through the entire site*/
 .title-section {
   font-size: 50px;
+  font-weight: bold;
   margin: 150px 0;
 }
 /***/
@@ -72,26 +80,26 @@ main {
   );
 }
 
-.text-section div {
+.hook-section .text-section div {
   max-width: 65%;
   margin-right: 50px;
 }
 
-.text-section div h1 {
+.hook-section .text-section div h1 {
   color: var(--just-white);
   font-size: 110px;
 }
 
-.text-section div p {
+.hook-section .text-section div p {
   color: var(--just-white);
   font-size: 22px;
 }
 
-.image-section {
+.hook-section .image-section {
   margin-top: 60px !important;
 }
 
-.image-section img {
+.hook-section .image-section img {
   width: 800px;
   height: 800px;
 }
@@ -252,7 +260,7 @@ main {
 
 .fifth-section .text-container h6 {
   color: var(--just-white);
-  font-size: 70px;
+  font-size: 50px;
   width: 430px;
 }
 
@@ -310,4 +318,369 @@ main {
   margin-top: 20px;
   font-size: 18px;
   color: var(--black);
+}
+
+
+/*Seventh section*/
+
+.seventh-section {
+  max-height: max-content;
+}
+
+.seventh-section .title-section-special {
+  font-size: 50px;
+  margin: 50px 0;
+}
+
+.seventh-section .avoiding-text {
+  font-size: 18px;
+  max-width: 50%;
+}
+
+.avoiding-casino-cards {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.avoiding-card {
+  margin: 20px;
+  height: 350px;
+  background-color: var(--avoiding-card-background-color);
+  border-radius: 12px;
+}
+
+.avoiding-card .images-container {
+  height: 30%;
+}
+
+.avoiding-card .images-container .warn-image {
+  width: 50px;
+  height: 50px;
+  margin-left: 40px;
+  filter: invert(19%) sepia(85%) saturate(2787%) hue-rotate(347deg) brightness(94%) contrast(87%);
+}
+
+.avoiding-card .casino-title-and-rate {
+  height: 20%;
+}
+
+.avoiding-card .casino-title-and-rate .casino-title {
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 28px;
+  margin-right: 20px;
+}
+
+.avoiding-card .casino-title-and-rate .casino-rate {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--red);
+  margin-top: 20px;
+  
+}
+
+.casino-errors {
+  max-height: max-content;
+  margin-top: 10px;
+}
+
+.casino-errors .casino-error-container {
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+
+.casino-error-container .error-image {
+  width: 30px;
+  height: 30px;
+  filter: invert(19%) sepia(60%) saturate(2814%) hue-rotate(344deg) brightness(121%) contrast(81%);
+}
+
+.casino-error-container .error-text {
+  font-size: 14px;
+  color: var(--black);
+  margin-left: 10px;
+}
+
+/*Eighth section*/
+
+.rate-section {
+  margin-top: 250px;
+  height: 800px;
+}
+
+.method-container {
+  height: 30%;
+  margin-bottom: 20px;
+}
+
+.method-card {
+  border-radius: 24px;
+  height: 240px;
+  width: 750px;
+  background-color: var(--main-blue);
+  /* padding: 10px; */
+}
+
+.method-card .image-container img {
+  margin-top: 40px;
+  width: 60px;
+  height: 60px;
+  filter: invert(66%) sepia(71%) saturate(373%) hue-rotate(128deg) brightness(93%) contrast(90%);
+}
+
+.method-container .text-container {
+  padding-right: 40px;
+}
+
+.method-card .text-container h1 {
+  color: var(--just-white);
+  font-size: 25px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.method-card .text-container p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--just-white);
+}
+
+.rate-section .text-section h1 {
+  max-width: 80%;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/* Ninth section */
+
+.ninth-section {
+  max-height: max-content;
+}
+
+.labels-container {
+  height: 200px;
+}
+
+.mode-content {
+  width: 150px;
+  height: 60px;
+  background-color: var(--main-blue);
+  padding: 10px;
+  margin: 0 100px;
+}
+
+.mode-content h1 {
+  color: var(--just-white);
+}
+
+.compare-container {
+  min-height: 150px;
+  max-height: max-content;
+  margin-bottom: 40px;
+}
+
+/* .compare-container .online-text {
+  
+} */
+
+.compare-container .mode-text p {
+  font-size: 18px;
+  max-width: 75%;
+}
+
+.compare-container .mode-text img {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  filter: invert(68%) sepia(99%) saturate(240%) hue-rotate(125deg) brightness(93%) contrast(90%);
+}
+
+.compare-container .mode-text .offline-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  transform: rotateY(180deg);
+  filter: invert(68%) sepia(99%) saturate(240%) hue-rotate(125deg) brightness(93%) contrast(90%);
+}
+
+.compare-container .image-container .image-border {
+  margin-top: 20px;
+}
+
+.compare-container .image-container .image-border img {
+  width: 80px;
+  height: 80px;
+  background-color: var(--compare-images-bg-color);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.compare-container .image-container h1 {
+  font-weight: bold;
+}
+
+/* Tenth section */
+
+.tenth-section {
+  margin-top: 50px;
+  height: 850px;
+  background-color: var(--main-blue);
+  margin-bottom: 20px;
+}
+
+/* .tenth-section .content {
+
+} */
+
+.tenth-section .content h1 {
+  color: var(--just-white);
+  font-size: 50px;
+  margin-top: 100px;
+  max-width: 70%;
+}
+
+.tenth-section .content .desc {
+  color: var(--just-white);
+  font-size: 16px;
+  margin-top: 30px;
+  font-family: 'Poppins', sans-serif;
+  max-width: 80%;
+}
+
+.tenth-section .content a {
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--just-white);
+  border: 1px solid var(--just-white);
+  border-radius: 50px;
+  padding: 15px 60px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.payments-container {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.payment-type {
+  height: 60px;
+}
+
+.payment-type .content-container {
+  width: 250px;
+}
+
+
+
+.payment-type img {
+  width: 40px;
+  height: 40px;
+}
+
+.payment-type p {
+  margin-left: 15px;
+  font-size: 25px;
+  color: var(--just-white);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* FAQ section */
+
+.faq-section {
+  max-height: max-content;
+}
+
+.faq-section .center-content {
+  width: 45%;
+  max-height: max-content;
+}
+
+.faq-container {
+  margin-bottom: 20px;
+  min-height: 150px;
+  max-height: max-content;
+}
+
+.faq-container .title-and-button-container {
+  height: 100px;
+}
+
+.faq-container .title-and-button-container h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.active-faq .title-and-button-container h1 {
+  color: var(--faq-active-color);
+}
+
+.active-faq .title-and-button-container .active-faq-image {
+  transform: rotate(270deg);
+}
+
+.faq-container .title-and-button-container img {
+  width: 25px;
+  height: 25px;
+  filter: invert(68%) sepia(99%) saturate(240%) hue-rotate(125deg) brightness(93%) contrast(90%);
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.faq-container .answer-content {
+  max-height: max-content;
+  background-color: var(--secondary-blue);
+  padding: 15px;
+}
+
+.faq-container .answer-content p {
+  font-size: 15px;
+  color: var(--just-white);
+}
+
+/* Footer section */
+
+footer {
+  margin-top: 100px;
+  height: 500px;
+  background-color: var(--main-blue);
+  color: var(--just-white);
+}
+
+
+
+footer .buttons-container {
+  height: 90%;
+}
+
+footer .buttons-container h1 {
+  font-weight: bold;
+}
+
+footer .buttons-container a {
+  color: var(--just-white);
+  font-size: 15px;
+  margin-top: 20px;
+  display: block;
+  
+}
+
+footer .copyright-container {
+  height: 10%;
+}
+
+footer .copyright-container a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--just-white);
+  margin: auto 15px;
+}
+
+footer .copyright-container p {
+  font-size: 16px;
+  color: var(--just-white);
+  margin: auto 20px;
+}
+
+footer .copyright-container .information-rights-container p {
+  margin: auto 50px;
 }
